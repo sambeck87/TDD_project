@@ -1,5 +1,3 @@
-require 'pry'
-
 class Solver
   class NotCorrectNumber < StandardError; end
 
