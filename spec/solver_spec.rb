@@ -1,7 +1,7 @@
 require 'rspec'
 require_relative '../solver'
 
-describe Solver do # rubocop:disable Metrics/BlockLength: Block has too many lines
+describe Solver do # : Block has too many lines
   context 'When testing Factorial method' do
     it 'When number is 5, factorial should return 120' do
       factorial = Solver.factorial(5)
