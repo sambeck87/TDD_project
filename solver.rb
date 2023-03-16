@@ -1,6 +1,7 @@
 require 'pry'
 
 class Solver
+  class NotCorrectNumber < StandardError; end
 
   def self.factorial(number)
     @number = number

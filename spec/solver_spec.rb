@@ -14,8 +14,7 @@ describe Solver do
     end
 
     it 'When number is negative, factorial should raise an exception' do
-      factorial = Solver.factorial(-1)
-      expect { factorial }.to raise_error(NotCorrectNumber)
+      expect { Solver.factorial(-1) }.to raise_error(Solver::NotCorrectNumber, 'The number should be a positive number')
     end
   end
 
