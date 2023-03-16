@@ -25,4 +25,23 @@ describe Solver do
       expect(reverse).to eq('olleH')
     end
   end
+
+  context 'When testing fizzbuzz method' do
+    it 'If the number is divisible by 3 return fizz' do
+      fizzbuzz = Solver.fizzbuzz(3)
+      expect(fizzbuzz).to eq('fizz')
+    end
+    it 'If the number is divisible by 5 return buzz' do
+      fizzbuzz = Solver.fizzbuzz(5)
+      expect(fizzbuzz).to eq('buzz')
+    end
+    it 'If the number is divisible by 3 and 5 return fizzbuzz' do
+      fizzbuzz = Solver.fizzbuzz(15)
+      expect(fizzbuzz).to eq('fizzbuzz')
+    end
+    it 'If the number is not divisible by 3 nor 5 return the number as an string' do
+      fizzbuzz = Solver.fizzbuzz(13)
+      expect(fizzbuzz).to eq('13')
+    end
+  end
 end
